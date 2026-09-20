@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" data-theme="ice">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Jiaxing Zhang — ~</title>
+  <meta name="description" content="Jiaxing Zhang's personal terminal. Explore public projects, including Stay Awake and JSON Formatter, one command at a time.">
+  <meta name="theme-color" content="#090b0a"><meta property="og:title" content="Jiaxing Zhang — a little corner of the terminal"><meta property="og:description" content="Type whoami. Explore projects. Make yourself at home.">
+  <link rel="canonical" href="https://chocolate213.github.io/"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=3729e366dc"><script type="module" src="app.mjs?v=38b272ce14"></script>
+</head>
+<body>
+  <a class="skip-link" href="#command">Skip to command prompt</a>
+  <main id="terminal" aria-label="Jiaxing Zhang's interactive terminal">
+    <div id="output" aria-label="Terminal output"></div>
+    <form id="command-form" aria-label="Command prompt" autocomplete="off">
+      <span class="prompt-prefix" aria-hidden="true"><span class="prompt-user">guest@jiaxing:</span><span id="cwd">~</span><span class="prompt-sigil">$</span></span>
+      <label for="command" class="sr-only">Terminal command</label><input id="command" name="command" type="text" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off" maxlength="300" aria-describedby="input-help" enterkeyhint="send">
+      <button class="sr-only" type="submit" tabindex="-1" aria-label="Run command">Run command</button>
+    </form>
+    <p id="input-help" class="sr-only">Enter runs a command. Tab completes commands. Up and down recall history. Control L clears the terminal.</p>
+    <div class="sr-only" id="announcement" role="status" aria-live="polite" aria-atomic="true"></div>
+    <noscript><h1>Jiaxing Zhang</h1><p>This interactive terminal needs JavaScript. You can still visit my public projects:</p><p><a href="https://github.com/chocolate213">GitHub</a> · <a href="https://chocolate213.github.io/stay-awake/">Stay Awake</a> · <a href="https://chocolate213.github.io/json-formatter/">JSON Formatter</a></p></noscript>
+  </main>
+</body>
+</html>
